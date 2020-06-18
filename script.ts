@@ -18,3 +18,22 @@ whoAreYou() {
 let firstone = new Person("John Doe", 28, "developer");
 
 console.log(firstone.whoAreYou());
+
+class More extends Person {
+	salary;
+	jobLocation;
+
+	constructor(fullName, age, jobTitle, salary, jobLocation) {
+		super(fullName, age, jobTitle);
+		this.salary = salary;
+		this.jobLocation = jobLocation;
+	}
+
+	whoAreYou() {
+		return `${super.whoAreYou()} my salary is ${this.salary} and I work in ${this.jobLocation}`;
+	}
+}
+
+let secondone = new More ("Jane Doe", 27, "developer", 1500, "Vienna");
+
+console.log(secondone.whoAreYou());
