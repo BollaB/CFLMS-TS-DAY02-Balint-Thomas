@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>b3</title>
+	<link rel="stylesheet" href="">
+	<style>
+		.cars, .bikes, .trucks {
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+
+	<button type="button" id="carbutton">Car</button>
+	<button type="button" id="bikebutton">Bike</button>
+	<button type="button" id="truckbutton">Truck</button>
+
+	<form>
+		<input type="number" id="year" placeholder="year" class="cars bikes trucks"><br>
+		<input type="number" id="HP" placeholder="HP" class="cars bikes trucks"><br>
+		<input type="text" id="color" placeholder="color" class="cars bikes trucks"><br>
+		<select id="brand" class="cars bikes trucks">
+		</select><br>
+		<input type="number" id="seats" class="cars" placeholder="seats"><br>
+		<select id="type" class="bikes"><br>
+		</select><br>
+		<input type="number" id="kilometers" placeholder="kilometers" class="cars bikes trucks"><br>
+	</form>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="advanced.js"></script>
+
+	<button type="button" id="carcalc" class="cars">Commit</button>
+	<button type="button" id="bikecalc" class="bikes">Commit</button>
+	<button type="button" id="truckcalc" class="trucks">Commit</button>
+
+	
+</body>
+</html>
